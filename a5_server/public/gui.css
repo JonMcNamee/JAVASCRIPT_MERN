@@ -1,0 +1,77 @@
+#buttonPanel {
+    margin-bottom: 1em;
+}
+
+button {
+    width: 200px;
+    font-size: 1.1em;
+}
+
+table,
+td,
+th {
+    border: solid thin gray;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: center;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    text-align: left;
+}
+
+th {
+    background-color: midnightblue;
+    color: #eee;
+}
+
+tr:not(:first-child):hover {
+    background-color: lightgreen;
+}
+
+.selected {
+    background-color: yellow;
+}
+
+#inputPanelToggleButton {
+    margin-bottom: 1em;
+}
+
+#inputPanel {
+    border: dashed thin black;
+    background-color: aliceblue;
+    margin: 1em 0;
+    padding: 20px;
+}
+
+.inputLabel {
+    width: 100px;
+    float: left;
+}
+
+input,
+select {
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+input:focus {
+    background-color: lightyellow;
+}
+
+#descriptionInput {
+    width: 500px;
+}
+
+#inputPanelButtonPanel {
+    margin: 0.5em 0;
+}
+
+.hidden {
+    display: none;
+}

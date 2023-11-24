@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Assignment 4</title>
+        <link rel="stylesheet" href="gui.css" />
+        <script src="gui.js"></script>
+    </head>
+    <body>
+        <h1>Restaurant Menu</h1>
+        <div id="buttonPanel">
+            <button id="addButton">Add</button>
+            <button id="updateButton">Update</button>
+            <button id="deleteButton">Delete</button>
+        </div>
+
+        <div id="inputPanel" class="hidden">
+            <div class="inputControl">
+                <div class="inputLabel">ID</div>
+                <input id="idInput" type="number" min="100" max="999" />
+            </div>
+            <div class="inputControl">
+                <div class="inputLabel">Category</div>
+                <select id="categoryInput">
+                    <option value="APP">APP (Appetizer)</option>
+                    <option value="ENT">ENT (Entree)</option>
+                    <option value="DES">DES (Desert)</option>
+                </select>
+            </div>
+            <div class="inputControl">
+                <div class="inputLabel">Description</div>
+                <input id="descriptionInput" />
+            </div>
+            <div class="inputControl">
+                <div class="inputLabel">Price</div>
+                <input id="priceInput" type="number" min="0" value="0" />
+            </div>
+            <div class="inputControl">
+                <div class="inputLabel">Vegetarian</div>
+                <input id="vegetarianInput" type="checkbox" />
+            </div>
+            <div id="inputPanelButtonPanel">
+                <button id="doneButton">Done</button>
+                <button id="cancelButton">Cancel</button>
+            </div>
+        </div>
+        <div id="items"></div>
+    </body>
+</html>
